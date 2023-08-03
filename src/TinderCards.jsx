@@ -9,10 +9,10 @@ const TinderCards = () => {
     async function FetchData () {
       const result = await axios.get("/tinder-card")
       console.log(result.data)
-      // const finalData = result?.data.filter( (item, i) => {
-      //   return i >= 3 ? null : item 
-      // })
-      setPerson(result.data)
+      const finalData = result?.data.filter( (item, i) => {
+        return i >= 8 ? null : item 
+      })
+      setPerson(finalData)
     }
     FetchData()
   }, []) 
