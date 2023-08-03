@@ -1,0 +1,13 @@
+.tinder-button {
+  padding-inline: 30px;
+  padding-block: 30px;
+  border-radius: 70px;
+  transition: 0.3s background ease-in-out;
+  &:hover {
+    background-color: #cccccc17;
+  }
+  &:focus-within {
+    // background-color: #cccccc9a;
+    box-shadow: 5px 9px 31px 6px #4444447a;
+  }
+}
